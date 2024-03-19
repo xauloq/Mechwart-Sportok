@@ -1,11 +1,78 @@
-hr{
+:root {
+    --background-color: #121212;            /* background */
+    --text-color: #E0E0E0;                  /* primary */
+    --accent-color: #BB86FC;                /* highlighting */
+    --secondary-background-color: #1E1E1E;  /* secondary bgc/elements */
+    --border-color: #292929;                /* border */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
     margin-top: 0;
+    border-top: 1px solid var(--border-color);
+    visibility: hidden;
 }
-#nav{
+
+#nav {
     background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
 }
-p{
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#nav a:hover {
+    color: var(--accent-color);
+}
+
+p {
     text-align: justify;
     text-indent: 20px;
     margin: 10px;
+    line-height: 1.6; 
 }
+
+.button {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10 20px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+a, .link {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover, .link:hover {
+    text-decoration: none;
+}
+
+div.container{
+    animation: switchTransiton 0.6s;
+    border-radius: 10px;
+    background-color: rgba(40, 40, 40, 0.8);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5), 0px 2px 4px rgba(255, 255, 255, 0.1);
+    transform: scale(98%);
+    transition: all 0.6s;
+}
+
+div.container:hover{
+    transform: scale(100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), 0px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
