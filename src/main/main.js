@@ -1,17 +1,18 @@
 let isLightTheme = true;
 let body = document.getElementById("body");
 let nav = document.getElementById("nav");
+let css = document.getElementById("cssLink");
 
 //locastorageba kene menteni a legutobb hasznalt modot ehhez majd megkerjuk lacit
 function themeChange(){
     if (isLightTheme == true){
         isLightTheme = false;
         body.setAttribute('data-bs-theme', "dark");
-        nav.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+        css.setAttribute('href',"main_dark.css");
     }
     else{
         isLightTheme = true;
         body.setAttribute('data-bs-theme', "light");
-        nav.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+        css.setAttribute('href',"main_light.css");
     }
 }

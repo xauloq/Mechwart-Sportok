@@ -1,0 +1,11 @@
+hr{
+    margin-top: 0;
+}
+#nav{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px;
+}
