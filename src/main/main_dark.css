@@ -30,7 +30,6 @@ hr {
     color: var(--accent-color);
     text-decoration: underline;
 }
-
 p{
     line-height: 1.6;
     color: var(--paragraph-color);
@@ -135,7 +134,6 @@ h1{
 .smootdropdown_container .menuitem a{
     box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     transform:translateY(100%);
-    background-color: white;
     transition: all 0.6s;
 }
 .smootdropdown_container .menuitem a:hover{

@@ -132,9 +132,10 @@ h1{
     opacity:0;
     cursor:pointer;
     pointer-events: none;
-    transition: all 0.5s;
+    transition: all 0.5s 1s;
 }
 .smootdropdown_container:hover .menuitem{
+    transition: all 0.5s;
     opacity: 1;
     pointer-events: auto;
 }
