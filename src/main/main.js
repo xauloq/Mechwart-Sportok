@@ -2,6 +2,7 @@ let isLightTheme = true;
 let body = document.getElementById("body");
 let nav = document.getElementById("nav");
 let css = document.getElementById("cssLink");
+let toggleSwitch = document.getElementById("mySwitch");
 
 function themeChange() {
     if (isLightTheme) {
@@ -16,6 +17,10 @@ function themeChange() {
     localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
 }
 
+function pageChange(url){
+    window.location.href = url;
+}
+
 //localstorage for theme change
 document.addEventListener('DOMContentLoaded', function() {
     const savedTheme = localStorage.getItem('theme');
@@ -27,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             body.setAttribute('data-bs-theme', "dark");
             css.setAttribute('href', "main_dark.css");
+            toggleSwitch.checked = true;
+            
         }
     }
 });
