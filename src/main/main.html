@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,45 +55,58 @@
     <main>
         <div id="section1" class="container mt-3" onclick="pageChange('sport.html')">
             <div class="mask" style="background-image: url('../img/foglalkozasok.jpg');"></div>
-            <h6>sportolni jó</h6>
+            <h6>Sportolni jó.</h6>
             <h1>Sportolj te is!</h1>
             <p>Csatlakozz valamelyik foglalkozásunkhoz!</p>
             <p class="NextArrow">--&#62;</p>
         </div>
         <div id="section2" class="container mt-3" onclick="pageChange('eredmenyeink.html')">
             <div class="mask"></div>
-            <h6>a sport nem csak játek, verseny is</h6>
+            <h6>A sport nem csak játek, verseny is!</h6>
             <h1>Eredményeink.</h1>
-            <p>Tekints meg iskolánk eredményeit!</p>
+            <p>Tekintsd meg iskolánk eredményeit!</p>
             <p class="NextArrow">--&#62;</p>
         </div>
 
         <div id="section3" class="container mt-3" onclick="pageChange('galeria.html')">
             <div class="mask" style="background-image: url('../img/szurkoloi_hatter.jpg');"></div>
-            <h6>emlekek es szurkolok nelkul egy csapat se csapat</h6>
+            <h6>Emlékek és szurkolók nélkül egy csapat se csapat!</h6>
             <h1>Galéria</h1>
-            <p>Tekints meg igenyes galeriank es videonkat!</p>
+            <p>Tekintsd meg igényes galériánk és videónkat!</p>
             <p class="NextArrow">--&#62;</p>
         </div>
     </main>
-    <footer class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-                <h5>Iskolánk:</h5>
-                <p class="footerP">-Debreceni SZC Mechwart András Gépipari és Informatikai Technikum</p>
-                <h5>Jelmondat:</h5>
-                <p class="footerP">-a Mechwart egy jo hely</p>
+
+    <footer>
+        <div class="footer-content container" style="height: auto;">
+            <div class="footer-section about">
+                <h5>Iskolánk</h5>
+                <p>Debreceni SZC Mechwart András Gépipari és Informatikai Technikum</p>
+                <p>"A Mechwart egy jó hely!"</p>
             </div>
-            <div class="col-lg-5">
-                <h5>Fejlesztok:</h5>
-                <p class="footerP">-Nagy Gergo</p>
-                <p class="footerP">-Laci</p>
-                <p class="footerP">-Menyhert Bence</p>
+            <div class="footer-section developers">
+                <h5>Fejlesztők</h5>
+                <ul>
+                    <li>Nagy Gergő</li>
+                    <li>Kovács László</li>
+                    <li>Menyhért Bence</li>
+                </ul>
             </div>
-            <div class="col-lg-1"></div>
+            <div class="footer-section social">
+                <h5>Kövess minket</h5>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook<i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon">Linkedin<i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Mechwart</p>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>

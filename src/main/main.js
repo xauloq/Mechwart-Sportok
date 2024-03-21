@@ -37,3 +37,33 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+// Navbar hyperlink fix
+let links = ['bevezetes', 'kezilabda', 'labdarugas', 'roplabda'].map((id) => document.querySelector(`a[href="#${id}"]`))
+let navbarHeight = 120;
+
+links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        let targetElement = document.querySelector(e.target.getAttribute('href'));
+
+        window.scrollTo({
+            top: targetElement.offsetTop - navbarHeight,
+            behavior: 'smooth'
+        });
+    });
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('.back-to-top').fadeIn(200);
+    } else {
+        $('.back-to-top').fadeOut(200);
+    }
+});
+
+$('.back-to-top').click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 300);
+})
