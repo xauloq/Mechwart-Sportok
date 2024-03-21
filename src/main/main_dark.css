@@ -16,7 +16,7 @@ body {
 hr {
     margin-top: 0;
     border-top: 1px solid var(--border-color);
-    visibility: visible;
+    display: none;
 }
 #nav {
     background-color: rgba(0, 0, 0, 0.9);
@@ -219,4 +219,7 @@ h1{
 .infografika-holder .flex-row div.destr-holder p{
     font-weight: bold;
     text-transform: uppercase;
+}
+.smaller{
+    transform: scale(90%);
 }
