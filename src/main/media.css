@@ -22,3 +22,20 @@
 .flex-container div img{
     width: 100%;
 }
+
+
+.item1{
+    grid-column: 1/span 2;
+}
+.item2{
+    grid-area:1/5/3/6;
+}
+.item3{
+    grid-area: 2/2/4/5;
+}
+.item4{
+    grid-area:3/1/5/2;
+}
+.item5{
+    grid-area:4/4/5/6
+}
