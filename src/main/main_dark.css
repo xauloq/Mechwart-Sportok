@@ -201,13 +201,13 @@ div.container:hover {
     width: 40%;
     border-radius: 20px;
     background-color: var(--border-color);
-    box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.6), 1px 1px 5px rgba(90, 90, 90, 0.2);
+    box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.3), 1px 1px 5px rgba(90, 90, 90, 0.1);
     font-weight: bold;
 }
 
 .infografika-holder .flex-row div.img-holder{
     background-color: var(--border-color);
-    box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.6), 1px 1px 5px rgba(90, 90, 90, 0.2);
+    box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.3), 1px 1px 5px rgba(90, 90, 90, 0.1);
     border-radius: 50%;
     margin: auto;
     height: 100%;
@@ -227,6 +227,34 @@ div.container:hover {
 }
 .smaller{
     transform: scale(90%);
+}
+
+.infografika-holder .flex-row div{
+    transition: all 0.6s;
+    animation: floatIn 0.6s;
+}
+.infografika-holder .flex-row div{
+    transform: scale(98%);
+}
+.infografika-holder .flex-row:hover div{
+    transform: scale(100%);
+}
+.infografika-holder .flex-row:hover div.destr-holder{
+    text-shadow: 2px 2px 5px rgba(90, 90, 90, 0.4), 1px 1px 5px rgba(90, 90, 90, 0.1);
+}
+.infografika-holder .flex-row div.img-holder,.infografika-holder .flex-row div.img-holder{
+    box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.6), 1px 1px 5px rgba(90, 90, 90, 0.2);
+}
+
+@keyframes floatIn {
+    from{
+        opacity: 0.2;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 footer {
