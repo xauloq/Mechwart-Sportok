@@ -10,7 +10,27 @@
 body {
     background-color: var(--secondary-background-color);
     background-image: linear-gradient(to bottom right, var(--secondary-background-color), rgba(128, 128, 128, 0.1));
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+p{
+    line-height: 1.6;
+    color: var(--paragraph-color);
+}
+
+h1{ 
+    transition: all 0.6s;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h6{
+    color: var(--uppertext-color);
+    text-transform: uppercase;
 }
 
 hr {
@@ -30,11 +50,6 @@ hr {
 #nav a:hover {
     color: var(--accent-color);
     text-decoration: underline;
-}
-
-p{
-    line-height: 1.6;
-    color: var(--paragraph-color);
 }
 
 div.container {
@@ -73,10 +88,7 @@ div.container:hover {
     box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.6), 1px 1px 5px rgba(128, 128, 128, 0.2);
 }
 
-h6{
-    color: var(--uppertext-color);
-    text-transform: uppercase;
-}
+
 
 .navbar-brand img{
     animation: switchTransition 0.6s;
@@ -88,10 +100,7 @@ h6{
 #nav:hover .navbar-brand img{
     box-shadow: 4px 4px 5px rgba(128, 128, 128, 0.6), 1px 1px 5px rgba(128, 128, 128, 0.2);
 }
-h1{
-    transition: all 0.6s;
-    opacity: 1;
-}
+
 #nav:hover .navbar-brand h1,.container:hover h1 {
     text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.4), 1px 1px 5px rgba(128, 128, 128, 0.1);
 }
@@ -303,4 +312,30 @@ footer {
 
 footer, footer * {
     box-shadow: none !important;
+}
+
+.cleanlist {
+    list-style: none;
+    padding-left: 0; 
+    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    color: var(--paragraph-color);
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.cleanlist li {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color); 
+    font-size: 18px;
+    position: relative; 
+}
+
+.cleanlist li:last-child {
+    border-bottom: none; 
+}
+
+.cleanlist ul li::before {
+    content: "— "; 
+    color: var(--accent-color); 
+    font-weight: bold;
 }
