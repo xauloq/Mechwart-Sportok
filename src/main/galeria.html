@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kezdőlap</title>
+    <title>Galéria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../reusable/smootdropdown.css">
     <link rel="stylesheet" href="main_light.css" id="cssLink">
@@ -32,15 +32,6 @@
                         <a class="btn mt-2" href="eredmenyeink.html">Eredményeink</a>
                     </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section1">Section 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section2">Section 2</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section3">Section 3</a>
-                </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <div class="form-check form-switch">
@@ -52,31 +43,92 @@
         </div>
     </nav>
     <hr>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="../img/P2016025.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Los Angeles</h3>
+                <p>We had such a great time in LA!</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+            <img src="../img/focipalya.png" alt="Chicago" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>Chicago</h3>
+                <p>Thank you, Chicago!</p>
+            </div> 
+            </div>
+            <div class="carousel-item">
+            <img src="../img/P2016046.jpg" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+                <h3>New York</h3>
+                <p>We love the Big Apple!</p>
+            </div>  
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
     
     <div class="flex-container">
-        <div class="item1">
-            <img src="../img/hozzaallasok.jpg" alt="">
-        </div>
-        <div class="item2">
-            <img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" style="width: 100%;height:100%">
-        </div>
-        <div class="item3">
+        <div class="wider"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="wider"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="higher"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="higher"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="video">
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AFVPpEIzAWA?si=fnV0DcW_v_SwpXjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </iframe>
         </div>
-        <div class="item4">
-            <img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt="" style="width: 100%;height:100%">
-        </div>
-        <div class="item5">
-            <img src="../img/mechwart_logo.png" alt="" style="width: 50%;">
-        </div>
-        <div><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
-        <div><img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt=""></div>
-        <div><img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt=""></div>
-        <div><img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt=""></div>
-        <div><img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ"</div>
-        <div><img src="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" alt=""></div>
+        <div class="higher"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="wider"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="wider"><img src="../img/szurkoloi_hatter.jpg" alt=""></div>
     </div>
+
+    <footer class="mt-5">
+        <div class="footer-content container" style="height: auto;">
+            <div class="footer-section about">
+                <h5>Iskolánk</h5>
+                <p>Debreceni SZC Mechwart András Gépipari és Informatikai Technikum</p>
+                <p>"A Mechwart egy jó hely!"</p>
+            </div>
+            <div class="footer-section developers">
+                <h5>Fejlesztők</h5>
+                <ul>
+                    <li>Nagy Gergő</li>
+                    <li>Kovács László</li>
+                    <li>Menyhért Bence</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h5>Kövess minket</h5>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook<i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon">Twitter<i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon">Instagram<i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon">Linkedin<i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Mechwart</p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="main.js"></script>
