@@ -20,6 +20,7 @@
 .flex-container div img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .wider{
@@ -53,12 +54,15 @@
     .video{
         grid-column: span 2;
         grid-row: span 1;
-        height: auto;
+        height: 50vh;
     }
     .higher{
         grid-row: span 1;
     }
     .carousel{
         height: auto;
+    }
+    .gotRemoved{
+        display: none;
     }
 }
