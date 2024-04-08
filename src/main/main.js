@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Navbar hyperlink fix
-let links = ['bevezetes', 'kezilabda', 'labdarugas', 'roplabda','section1','section2','section3'].map((id) => document.querySelector(`a[href="#${id}"]`))
+let links = ['bevezetes', 'kezilabda', 'labdarugas', 'roplabda', 'section1', 'section2', 'section3'].map((id) => document.querySelector(`a[href="#${id}"]`)).filter((link) => link !== null);
 let navbarHeight = 120;
 
 links.forEach((link) => {
