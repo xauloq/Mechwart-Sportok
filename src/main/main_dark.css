@@ -141,7 +141,8 @@ div.container:hover {
 .smootdropdown_container .menuitem a{
     box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     transform:translateY(100%);
-    transition: all 0.6s;
+    background-color: #121212;
+
 }
 .smootdropdown_container .menuitem a:hover{
     box-shadow: 1px 1px 5px rgba(90, 90, 90, 0.6), 1px 1px 5px rgba(90, 90, 90, 0.2);
@@ -351,4 +352,10 @@ footer, footer * {
     content: "— "; 
     color: var(--accent-color); 
     font-weight: bold;
+}
+
+#section1,
+#section2,
+#section3 {
+    cursor: pointer;
 }

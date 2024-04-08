@@ -371,3 +371,9 @@ footer, footer * {
     color: var(--accent-color); 
     font-weight: bold;
 }
+
+#section1,
+#section2,
+#section3 {
+    cursor: pointer;
+}
