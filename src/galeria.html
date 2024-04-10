@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Főoldal</title>
+    <title>Galéria</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../reusable/smootdropdown.css">
-    <link rel="stylesheet" href="main_light.css" id="cssLink">
-    <link rel="shortcut icon" href="../img/mechwart_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/smootdropdown.css">
+    <link rel="stylesheet" href="./css/main_light.css" id="cssLink">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="shortcut icon" href="./img/mechwart_logo.png" type="image/x-icon">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-theme="light" id="body">
     <nav class="navbar navbar-expand-md sticky-top" id="nav">
         <div class="container-fluid">
             <div class="navbar-brand logo-img">
-                <a href="main.html"><img src="../img/mechwart_logo.png" alt="" class="col-7"></a>
+                <a href="index.html"><img src="./img/mechwart_logo.png" alt="" class="col-7"></a>
             </div>
             <div class="navbar-brand logo-img">
-                <h1 style="text-indent: -20%;">Mechwart</h1>
+                <h1 style="text-indent: -30%;">Galéria</h1>
             </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -26,19 +27,10 @@
                 <li class="nav-item smootdropdown_container">
                     <a class="nav-link dropdown-toggle" href="#">Oldalaink</a>
                     <div class="menuitem">
+                        <a class="btn mt-2" href="index.html">Főoldal</a>
                         <a class="btn mt-2" href="sport.html">Foglalkozások</a>
                         <a class="btn mt-2" href="eredmenyeink.html">Eredményeink</a>
-                        <a class="btn mt-2" href="galeria.html">Galéria</a>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section1">Sport</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section2">Eredmények</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#section3">Galéria</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -52,30 +44,60 @@
     </nav>
     <hr>
 
-    <main>
-        <div id="section1" class="container mt-3" onclick="pageChange('sport.html')">
-            <div class="mask" style="background-image: url('../img/foglalkozasok.jpg');"></div>
-            <h6>Sportolni jó.</h6>
-            <h1>Sportolj te is!</h1>
-            <p>Csatlakozz valamelyik foglalkozásunkhoz!</p>
-            <p class="NextArrow">--&#62;</p>
-        </div>
-        <div id="section2" class="container mt-3" onclick="pageChange('eredmenyeink.html')">
-            <div class="mask" style="background-image: url('../img/medium_Futsal_4d09ca88e5.jpg');"></div>
-            <h6>A sport nem csak játek, verseny is!</h6>
-            <h1>Eredményeink.</h1>
-            <p>Tekintsd meg iskolánk eredményeit!</p>
-            <p class="NextArrow">--&#62;</p>
-        </div>
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-        <div id="section3" class="container mt-3" onclick="pageChange('galeria.html')">
-            <div class="mask" style="background-image: url('../img/szurkoloi_hatter.jpg');"></div>
-            <h6>Emlékek és szurkolók nélkül egy csapat se csapat!</h6>
-            <h1>Galéria</h1>
-            <p>Tekintsd meg igényes galériánk és videónkat!</p>
-            <p class="NextArrow">--&#62;</p>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
         </div>
-    </main>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="./img/P2016025.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/hozzaallasok.jpg" alt="New York" class="d-block" style="width:100%">
+                <div class="carousel-caption">
+                    <h3>Hozzáállás</h3>
+                    <h6 style="color: gray;">Nem mindig egyforma</h6>
+                </div>  
+                </div>
+
+            <div class="carousel-item">
+            <img src="./img/P2016046.jpg" alt="New York" class="d-block" style="width:100%">
+            </div>
+
+            <div class="carousel-item">
+                <img src="./img/background.jpeg" alt="New York" class="d-block" style="width:100%;">
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+    <div class="flex-container">
+        <div class="wider"><img src="./img/szurkoloi_hatter.jpg" alt=""></div>
+        <div class="wider"><img src="./img/foglalkozasok.jpg" alt=""></div>
+        <div class="higher"><img src="./img/Kende.jpg" alt=""></div>
+        <div class="higher"><img src="./img/P2015925.jpg" alt=""></div>
+        <div class="video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AFVPpEIzAWA?si=fnV0DcW_v_SwpXjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </iframe>
+        </div>
+        <div class="higher gotRemoved"><img src="./img/kezilabdapalya.png" alt=""></div>
+        <div class="wider"><img src="./img/IMG_3164.jpg" alt=""></div>
+        <div class="wider"><img src="./img/P2016006.jpg" alt=""></div>
+    </div>
 
     <footer class="mt-5">
         <div class="footer-content container">
@@ -104,7 +126,6 @@
                 <div class="social-links">
                     <a href="https://www.dszcmechwart.hu/" target="_blank" class="social-icon">Mechwart<i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.canva.com/hu_hu/" target="_blank" class="social-icon">Canva<i class="fab fa-facebook-f"></i></a>
-                    <a href="https://images.unsplash.com/photo-1528287942171-fbe365d1d9ac?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&w=1200&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ" target="_blank" class="social-icon">Unsplash<i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
@@ -114,6 +135,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

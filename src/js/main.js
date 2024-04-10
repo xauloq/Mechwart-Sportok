@@ -8,11 +8,11 @@ function themeChange() {
     if (isLightTheme) {
         isLightTheme = false;
         body.setAttribute('data-bs-theme', "dark");
-        css.setAttribute('href', "main_dark.css");
+        css.setAttribute('href', "./css/main_dark.css");
     } else {
         isLightTheme = true;
         body.setAttribute('data-bs-theme', "light");
-        css.setAttribute('href', "main_light.css");
+        css.setAttribute('href', "./css/main_light.css");
     }
     localStorage.setItem('theme', isLightTheme ? 'light' : 'dark');
 }
@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', function() {
         isLightTheme = savedTheme === 'light';
         if (isLightTheme) {
             body.setAttribute('data-bs-theme', "light");
-            css.setAttribute('href', "main_light.css");
+            css.setAttribute('href', "./css/main_light.css");
         } else {
             body.setAttribute('data-bs-theme', "dark");
-            css.setAttribute('href', "main_dark.css");
+            css.setAttribute('href', "./css/main_dark.css");
             toggleSwitch.checked = true;
             
         }
@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Navbar hyperlink fix
+
 let links = ['bevezetes', 'kezilabda', 'labdarugas', 'roplabda', 'section1', 'section2', 'section3'].map((id) => document.querySelector(`a[href="#${id}"]`)).filter((link) => link !== null);
 let navbarHeight = 120;
 
@@ -54,16 +55,3 @@ links.forEach((link) => {
         });
     });
 });
-
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
-        $('.back-to-top').fadeIn(200);
-    } else {
-        $('.back-to-top').fadeOut(200);
-    }
-});
-
-$('.back-to-top').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, 300);
-})
